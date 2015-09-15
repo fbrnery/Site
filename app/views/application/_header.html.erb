@@ -1,9 +1,42 @@
- <nav class="navbar navbar-navbar-fixed-top">
+  <nav class="navbar navbar-navbar">
     <div class="container">
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <a class="navbar-brand" href="#">
           <%= image_tag 'logo-miranda-1.png' %>
         </a>
+
+        <ul class="nav nav-pills navbar-right">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Quem Somos</a></li>
+          <li role="presentation"><a href="#">Fale Conosco</a></li>
+
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Sites <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              ...
+            </ul>
+          </li>
+
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Sistemas de Web <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              ...
+            </ul>
+          </li>
+
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              CFTV <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              ...
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
