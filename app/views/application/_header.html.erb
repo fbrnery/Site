@@ -1,42 +1,50 @@
-  <nav class="navbar navbar-navbar">
-    <div class="container">
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <a class="navbar-brand" href="#">
-          <%= image_tag 'logo-miranda-1.png' %>
-        </a>
+<nav class="navbar navbar-navbar">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <a class="navbar-brand" href="#">
+        <%= image_tag 'logo-miranda-3.png' %>
+      </a>
+      <ul class="nav nav-pills navbar-right">
+        <li role="presentation"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Quem Somos</a></li>
+        <li role="presentation"><a href="#">Fale Conosco</a></li>
 
-        <ul class="nav nav-pills navbar-right">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="#">Quem Somos</a></li>
-          <li role="presentation"><a href="#">Fale Conosco</a></li>
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Sites <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </li>
 
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              Sites <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              ...
-            </ul>
-          </li>
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Sistemas de Web <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </li>
 
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              Sistemas de Web <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              ...
-            </ul>
-          </li>
-
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              CFTV <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              ...
-            </ul>
-          </li>
-        </ul>
-      </div>
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            CFTV <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            ...
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="mini-icons">
+         <a href="http://www.fb.com/"><%= image_tag "facebook.png"%><span class="hide">facebook</span></i></a>
+         <a href="http://www.twitter.com/"><%= image_tag 'twitter.png' %><span class="hide">twitter</span></i></a>
+         <a href="https://plus.google.com/"><%= image_tag "google.png"%><span class="hide">googlepl</span></i></a>
+         <a href="http://www.instagram.com/"><%= image_tag "instagram.png"%><span class="hide">instagram</span></i></a>
+         <a href="http://www.youtube.com/"><%= image_tag "youtube.png"%><span class="hide">youtube</span></i></a></div>
+        <div>
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
