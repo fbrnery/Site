@@ -3,6 +3,41 @@ $navbar-height: 100px
 @import 'bootstrap-sprockets'
 @import 'bootstrap'
 
+// http://stackoverflow.com/questions/10591422/bootstrap-carousel-image-doesnt-align-properly
+.carousel-inner > .item > img
+  margin: 0 auto
+  display: block
+  left: 50px
+  top: 100px
+  width: 65%
+  height: 80%
+  box-shadow: 0px 0px 0px 0px white
+  border: 1px solid #058080
+  color: white
+  transition: opacity 10s
+
+.carousel-control
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  width: 15%
+  opacity: 0.9
+  font-size: 30px
+  color: #fff
+  text-align: center
+  margin-right: 225px
+  margin-left: 225px
+
+.carousel-control.left
+  background-image: none
+
+.carousel-control.right
+  background-image: none
+
+body
+  background-color: #058080
+
 .navbar
   background-color: #1e242e
 
@@ -72,3 +107,4 @@ nav#menu ul
   padding: -50px
   padding-bottom: 1px
   margin-bottom: -75px
+
