@@ -5,36 +5,25 @@
         <%= image_tag 'logo-miranda-3.png' %>
       </a>
       <ul class="nav nav-pills navbar-right">
-        <li role="presentation"><a href="#">Home</a></li>
-        <li role="presentation"><a href="#">Quem Somos</a></li>
-        <li role="presentation"><a href="#">Fale Conosco</a></li>
+
+        <li role="presentation"><%= link_to "Home", home_index_path%></li>
+        <li role="presentation"><%= link_to "Quem somos", home_quemsomos_path%></li>
+        <li role="presentation"><%= link_to "Fale Conosco", home_faleconosco_path%></li>
 
         <li role="presentation" class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
             Sites <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            ...
+            <h5>Inícial<h5>
+            <h5>E-commerce<h5>
+            <h5>Portfolio<h5>
           </ul>
         </li>
 
-        <li role="presentation" class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-            Sistemas de Web <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            ...
-          </ul>
-        </li>
+        <li role="presentation"><%= link_to "Sistemas de Web", home_sistemasweb_path%></li>
+        <li role="presentation"><%= link_to "CFTV", home_cftv_path%></li>
 
-        <li role="presentation" class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-            CFTV <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            ...
-          </ul>
-        </li>
       </ul>
       <form class="navbar-form navbar-right">
         <div class="mini-icons">
